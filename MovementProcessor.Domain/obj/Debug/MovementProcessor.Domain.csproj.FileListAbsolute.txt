@@ -1,0 +1,5 @@
+F:\Projects\MovementProcessor\MovementProcessor.Domain\bin\Debug\MovementProcessor.Domain.dll
+F:\Projects\MovementProcessor\MovementProcessor.Domain\bin\Debug\MovementProcessor.Domain.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.csprojResolveAssemblyReference.cache
+F:\Projects\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.dll
+F:\Projects\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.pdb

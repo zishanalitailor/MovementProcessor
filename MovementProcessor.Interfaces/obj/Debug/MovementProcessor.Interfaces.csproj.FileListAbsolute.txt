@@ -1,0 +1,7 @@
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Interfaces.dll
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Interfaces.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Domain.dll
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Domain.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.csprojResolveAssemblyReference.cache
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.dll
+F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.pdb

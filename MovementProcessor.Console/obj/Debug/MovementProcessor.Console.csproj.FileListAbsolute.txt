@@ -1,0 +1,12 @@
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Console.exe.config
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Console.exe
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Console.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Business.dll
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Domain.dll
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Interfaces.dll
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Business.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Domain.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Console\bin\Debug\MovementProcessor.Interfaces.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Console\obj\Debug\MovementProcessor.Console.csprojResolveAssemblyReference.cache
+F:\Projects\MovementProcessor\MovementProcessor.Console\obj\Debug\MovementProcessor.Console.exe
+F:\Projects\MovementProcessor\MovementProcessor.Console\obj\Debug\MovementProcessor.Console.pdb
