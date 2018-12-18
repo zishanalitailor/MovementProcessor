@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MovementProcessor.Domain.Helper;
 using MovementProcessor.Domain;
 using MovementProcessor.Interfaces;
 
@@ -10,55 +11,59 @@ namespace MovementProcessor.Business
 {
     public class Processor : IProcessor
     {
-        private readonly Robot _robot;
-        public Processor(Robot robot)
+        private Robot _robot;
+        public Robot robot
         {
-            _robot = robot;
-        }
-
-
-        public Robot Move(string direction)
-        {
-            return Process(direction);
-        }
-
-
-        private Robot Process(string direction)
-        {
-            foreach (char dir in direction)
+            get
             {
-                switch (dir)
+                return _robot;
+            }
+            set
+            {
+                _robot = value;
+            }
+        }
+
+        public Robot Move(string instructions)
+        {
+            return Process(instructions);
+        } 
+        private Robot Process(string instructions)
+        {
+            foreach (char instruction in instructions)
+            {
+                switch (instruction)
                 {
                     case '<':
                         {
-                            GetDirection(dir, "anticlockwise");
+                            GetDirection(instruction, Rotation.Anticlockwise);
                             break;
                         }
                     case '>':
                         {
-                            GetDirection(dir, "clockwise");
+                            GetDirection(instruction, Rotation.Clockwise);
                             break;
                         }
                     case '^':
                         {
                             switch (_robot.DirectionOfMovement)
                             {
-                                case 'N':
+                                case Direction.North:
                                     {
                                         _robot.y = _robot.y + 1;
                                         break;
                                     }
-                                case 'S':
+                                case Direction.South:
                                     {
                                         _robot.y = _robot.y - 1;
                                         break;
                                     }
-                                case 'E':
+                                case Direction.East:
                                     {
                                         _robot.x = _robot.x + 1;
                                         break;
                                     }
-                                case 'W':
+                                case Direction.West:
                                     {
                                         _robot.x = _robot.x - 1;
                                         break;
@@ -71,53 +76,53 @@ namespace MovementProcessor.Business
             return _robot;
         }
 
-        private void GetDirection(char direction, string rotation)
+        private void GetDirection(char direction, Rotation rotation)
         {
-            if (rotation == "clockwise")
+            if (rotation == Rotation.Anticlockwise)
             {
 
-                if (_robot.DirectionOfMovement == 'N')
+                if (_robot.DirectionOfMovement == Direction.North)
                 {
-                    _robot.DirectionOfMovement = 'E';
+                    _robot.DirectionOfMovement = Direction.East;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'E')
+                if (_robot.DirectionOfMovement == Direction.East)
                 {
-                    _robot.DirectionOfMovement = 'S';
+                    _robot.DirectionOfMovement = Direction.South;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'S')
+                if (_robot.DirectionOfMovement == Direction.South)
                 {
-                    _robot.DirectionOfMovement = 'W';
+                    _robot.DirectionOfMovement = Direction.West;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'W')
+                if (_robot.DirectionOfMovement == Direction.West)
                 {
-                    _robot.DirectionOfMovement = 'N';
+                    _robot.DirectionOfMovement = Direction.North;
                     return;
                 }
 
             }
             else
             {
-                if (_robot.DirectionOfMovement == 'N')
+                if (_robot.DirectionOfMovement == Direction.North)
                 {
-                    _robot.DirectionOfMovement = 'W';
+                    _robot.DirectionOfMovement = Direction.West;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'W')
+                if (_robot.DirectionOfMovement == Direction.West)
                 {
-                    _robot.DirectionOfMovement = 'S';
+                    _robot.DirectionOfMovement = Direction.South;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'S')
+                if (_robot.DirectionOfMovement == Direction.South)
                 {
-                    _robot.DirectionOfMovement = 'E';
+                    _robot.DirectionOfMovement = Direction.East;
                     return;
                 }
-                if (_robot.DirectionOfMovement == 'E')
+                if (_robot.DirectionOfMovement == Direction.East)
                 {
-                    _robot.DirectionOfMovement = 'N';
+                    _robot.DirectionOfMovement = Direction.North;
                     return;
                 }
             }

@@ -1,0 +1,13 @@
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Test.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Test.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+F:\Projects\MovementProcessor\MovementProcessor.Test\obj\Debug\MovementProcessor.Test.csprojResolveAssemblyReference.cache
+F:\Projects\MovementProcessor\MovementProcessor.Test\obj\Debug\MovementProcessor.Test.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\obj\Debug\MovementProcessor.Test.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Business.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Domain.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Interfaces.dll
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Business.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Domain.pdb
+F:\Projects\MovementProcessor\MovementProcessor.Test\bin\Debug\MovementProcessor.Interfaces.pdb

@@ -9,6 +9,7 @@ namespace MovementProcessor.Interfaces
 {
     public interface IProcessor
     {
-        Robot Move(string direction);
+        Robot robot { get; set; }
+        Robot Move(string instructions);
     }
 }

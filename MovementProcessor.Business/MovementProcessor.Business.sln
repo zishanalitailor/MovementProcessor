@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovementProcessor.Interface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovementProcessor.Console", "..\MovementProcessor.Console\MovementProcessor.Console.csproj", "{FB168B85-F20B-4D19-90E2-84DC65B08210}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovementProcessor.Test", "..\MovementProcessor.Test\MovementProcessor.Test.csproj", "{E1A0B059-82E2-43FB-84AF-B1D87A6CE580}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FB168B85-F20B-4D19-90E2-84DC65B08210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB168B85-F20B-4D19-90E2-84DC65B08210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB168B85-F20B-4D19-90E2-84DC65B08210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A0B059-82E2-43FB-84AF-B1D87A6CE580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A0B059-82E2-43FB-84AF-B1D87A6CE580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A0B059-82E2-43FB-84AF-B1D87A6CE580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A0B059-82E2-43FB-84AF-B1D87A6CE580}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

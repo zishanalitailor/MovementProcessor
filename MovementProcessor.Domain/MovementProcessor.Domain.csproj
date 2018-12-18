@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\Direction.cs" />
+    <Compile Include="Helper\Rotation.cs" />
     <Compile Include="Robot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
