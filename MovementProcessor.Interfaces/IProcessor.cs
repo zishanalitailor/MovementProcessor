@@ -11,7 +11,5 @@ namespace MovementProcessor.Interfaces
     {
         Robot robot { get; set; }
         Robot Move(string instructions);
-
-        // log
     }
 }

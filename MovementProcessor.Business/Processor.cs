@@ -84,58 +84,5 @@ namespace MovementProcessor.Business
             }
             return _robot;
         }
-
-        private void GetDirection(char direction, Rotation rotation)
-        {
-            if (rotation == Rotation.Clockwise)
-            {
-
-                if (_robot.DirectionOfMovement == Direction.North)
-                {
-                    _robot.DirectionOfMovement = Direction.East;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.East)
-                {
-                    _robot.DirectionOfMovement = Direction.South;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.South)
-                {
-                    _robot.DirectionOfMovement = Direction.West;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.West)
-                {
-                    _robot.DirectionOfMovement = Direction.North;
-                    return;
-                }
-
-            }
-            else
-            {
-                if (_robot.DirectionOfMovement == Direction.North)
-                {
-                    _robot.DirectionOfMovement = Direction.West;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.West)
-                {
-                    _robot.DirectionOfMovement = Direction.South;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.South)
-                {
-                    _robot.DirectionOfMovement = Direction.East;
-                    return;
-                }
-                if (_robot.DirectionOfMovement == Direction.East)
-                {
-                    _robot.DirectionOfMovement = Direction.North;
-                    return;
-                }
-            }
-
-        }
     }
 }

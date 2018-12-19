@@ -7,4 +7,3 @@ E:\Working\Tasks\MovementProcessor\MovementProcessor.Domain\bin\Debug\MovementPr
 E:\Working\Tasks\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.csproj.CoreCompileInputs.cache
 E:\Working\Tasks\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.dll
 E:\Working\Tasks\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.pdb
-E:\Working\Tasks\MovementProcessor\MovementProcessor.Domain\obj\Debug\MovementProcessor.Domain.csprojResolveAssemblyReference.cache
