@@ -10,53 +10,95 @@ using MovementProcessor.Interfaces;
 namespace MovementProcessor.Business
 {
     public class DirectionChanger : IDirectionChanger
-    {  
-        public char GetDirection(char instruction, Rotation rotation)
+    {
+        public Direction GetDirection1(char instruction, Rotation rotation)
         {
             if (rotation == Rotation.Anticlockwise)
             {
                 if (instruction == 'N')
-                {
-                    instruction = 'W';
-                    return instruction;
+                { 
+                    return Direction.West;
                 }
                 if (instruction == 'W')
                 {
-                    instruction = 'S';
-                    return instruction;
+                    return Direction.South;
                 }
                 if (instruction == 'S')
                 {
-                    instruction = 'E';
-                    return instruction;
+                    return Direction.East;
                 }
                 if (instruction == 'E')
                 {
-                    instruction = 'N';
-                    return instruction;
-                } 
+                    return Direction.North;
+                }
             }
             else
             {
                 if (instruction == 'N')
                 {
-                    instruction = 'E';
-                    return instruction;
+                    return Direction.East;
                 }
                 if (instruction == 'E')
                 {
-                    instruction = 'S';
-                    return instruction;
+                    return Direction.South;
                 }
                 if (instruction == 'S')
                 {
-                    instruction = 'W';
-                    return instruction;
+                    return Direction.West;
                 }
                 if (instruction == 'W')
                 {
-                    instruction = 'N';
-                    return instruction;
+                    return Direction.North;
+                }
+            }
+            throw new Exception();
+        }
+        public Direction GetDirection(Direction direction, Rotation rotation)
+        {
+            if (rotation == Rotation.Anticlockwise)
+            {
+                if (direction == Direction.North)
+                {
+                    direction = Direction.West;
+                    return direction;
+                }
+                if (direction == Direction.West)
+                {
+                    direction = Direction.South;
+                    return direction;
+                }
+                if (direction == Direction.South)
+                {
+                    direction = Direction.East;
+                    return direction;
+                }
+                if (direction == Direction.East)
+                {
+                    direction = Direction.North;
+                    return direction;
+                } 
+            }
+            else
+            {
+                if (direction == Direction.North)
+                {
+                    direction = Direction.East;
+                    return direction;
+                }
+                if (direction == Direction.East)
+                {
+                    direction = Direction.South;
+                    return direction;
+                }
+                if (direction == Direction.South)
+                {
+                    direction = Direction.West;
+                    return direction;
+                }
+                if (direction == Direction.West)
+                {
+                    direction = Direction.North;
+                    return direction;
                 }
             }
             throw new Exception();

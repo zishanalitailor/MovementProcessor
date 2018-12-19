@@ -5,3 +5,11 @@ F:\Projects\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementPro
 F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.csprojResolveAssemblyReference.cache
 F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.dll
 F:\Projects\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Interfaces.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Interfaces.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Domain.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\bin\Debug\MovementProcessor.Domain.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.csprojResolveAssemblyReference.cache
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.csproj.CoreCompileInputs.cache
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Interfaces\obj\Debug\MovementProcessor.Interfaces.pdb

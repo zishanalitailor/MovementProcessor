@@ -11,6 +11,7 @@ namespace MovementProcessor.Interfaces
 {
     public interface IDirectionChanger
     {
-        char GetDirection(char direction, Rotation rotation);
+        Direction GetDirection1(char direction, Rotation rotation);
+        Direction GetDirection(Direction direction, Rotation rotation);
     }
 }

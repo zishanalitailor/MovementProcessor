@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper\Direction.cs" />
+    <Compile Include="Helper\DirectionHelper.cs" />
     <Compile Include="Helper\Rotation.cs" />
+    <Compile Include="MaxCoordinate.cs" />
     <Compile Include="Robot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

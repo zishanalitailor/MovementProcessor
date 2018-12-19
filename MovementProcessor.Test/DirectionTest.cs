@@ -15,10 +15,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'W';
+            Direction expectedDirection = Direction.West;
 
             //act
-            char resultDirection = directionChanger.GetDirection('N', Rotation.Anticlockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.North, Rotation.Anticlockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -29,10 +29,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'E';
+            Direction expectedDirection = Direction.East;
 
             //act
-            char resultDirection = directionChanger.GetDirection('S', Rotation.Anticlockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.South, Rotation.Anticlockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -43,10 +43,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'S';
+            Direction expectedDirection = Direction.South;
 
             //act
-            char resultDirection = directionChanger.GetDirection('W', Rotation.Anticlockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.West, Rotation.Anticlockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -57,10 +57,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'N';
+            Direction expectedDirection = Direction.North;
 
             //act
-            char resultDirection = directionChanger.GetDirection('E', Rotation.Anticlockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.East, Rotation.Anticlockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -73,10 +73,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'E';
+            Direction expectedDirection = Direction.East;
 
             //act
-            char resultDirection = directionChanger.GetDirection('N', Rotation.Clockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.North, Rotation.Clockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -87,10 +87,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'W';
+            Direction expectedDirection = Direction.West;
 
             //act
-            char resultDirection = directionChanger.GetDirection('S', Rotation.Clockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.South, Rotation.Clockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -101,10 +101,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'N';
+            Direction expectedDirection = Direction.North;
 
             //act
-            char resultDirection = directionChanger.GetDirection('W', Rotation.Clockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.West, Rotation.Clockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);
@@ -115,10 +115,10 @@ namespace MovementProcessor.Test
         {
             //arrange
             IDirectionChanger directionChanger = new DirectionChanger();
-            const char expectedDirection = 'S';
+            Direction expectedDirection = Direction.South;
 
             //act
-            char resultDirection = directionChanger.GetDirection('E', Rotation.Clockwise);
+            Direction resultDirection = directionChanger.GetDirection(Direction.East, Rotation.Clockwise);
 
             //assert
             Assert.AreEqual(resultDirection, expectedDirection);

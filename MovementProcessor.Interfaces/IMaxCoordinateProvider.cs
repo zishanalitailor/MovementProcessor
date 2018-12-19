@@ -7,11 +7,8 @@ using MovementProcessor.Domain;
 
 namespace MovementProcessor.Interfaces
 {
-    public interface IProcessor
+    public interface IMaxCoordinateProvider
     {
-        Robot robot { get; set; }
-        Robot Move(string instructions);
-
-        // log
+        MaxCoordinate maxCoordinate { get; set; }
     }
 }

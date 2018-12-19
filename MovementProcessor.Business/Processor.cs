@@ -9,7 +9,7 @@ using MovementProcessor.Interfaces;
 
 namespace MovementProcessor.Business
 {
-    public class Processor : IProcessor
+    public class Processor : IProcessor// Interface
     {
         private Robot _robot;
         public Robot robot
@@ -24,10 +24,17 @@ namespace MovementProcessor.Business
             }
         }
 
+        private readonly IDirectionChanger _directionChanger;
+
+        public Processor(IDirectionChanger directionChanger)
+        {
+            _directionChanger = directionChanger;
+        }
+
         public Robot Move(string instructions)
         {
             return Process(instructions);
-        } 
+        }
         private Robot Process(string instructions)
         {
             foreach (char instruction in instructions)
@@ -36,12 +43,14 @@ namespace MovementProcessor.Business
                 {
                     case '<':
                         {
-                            GetDirection(instruction, Rotation.Anticlockwise);
+                            _robot.DirectionOfMovement =
+                              _directionChanger.GetDirection(_robot.DirectionOfMovement, Rotation.Anticlockwise);
                             break;
                         }
                     case '>':
                         {
-                            GetDirection(instruction, Rotation.Clockwise);
+                            _robot.DirectionOfMovement =
+                              _directionChanger.GetDirection(_robot.DirectionOfMovement, Rotation.Clockwise);
                             break;
                         }
                     case '^':
@@ -78,7 +87,7 @@ namespace MovementProcessor.Business
 
         private void GetDirection(char direction, Rotation rotation)
         {
-            if (rotation == Rotation.Anticlockwise)
+            if (rotation == Rotation.Clockwise)
             {
 
                 if (_robot.DirectionOfMovement == Direction.North)

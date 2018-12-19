@@ -7,3 +7,13 @@ F:\Projects\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProce
 F:\Projects\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.csprojResolveAssemblyReference.cache
 F:\Projects\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.dll
 F:\Projects\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Business.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Business.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Domain.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Interfaces.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Domain.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\bin\Debug\MovementProcessor.Interfaces.pdb
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.csprojResolveAssemblyReference.cache
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.csproj.CoreCompileInputs.cache
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.dll
+E:\Working\Tasks\MovementProcessor\MovementProcessor.Business\obj\Debug\MovementProcessor.Business.pdb

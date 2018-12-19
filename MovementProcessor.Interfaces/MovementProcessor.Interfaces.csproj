@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDirectionChanger.cs" />
+    <Compile Include="IMaxCoordinateProvider.cs" />
     <Compile Include="IProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
