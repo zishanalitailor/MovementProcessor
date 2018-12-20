@@ -18,18 +18,22 @@ namespace MovementProcessor.Business
                 if (direction == Direction.North)
                 {
                     direction = Direction.West;
+                    return direction;
                 }
                 if (direction == Direction.West)
                 {
                     direction = Direction.South;
+                    return direction;
                 }
                 if (direction == Direction.South)
                 {
                     direction = Direction.East;
+                    return direction;
                 }
                 if (direction == Direction.East)
                 {
                     direction = Direction.North;
+                    return direction;
                 }
             }
             else
@@ -37,21 +41,25 @@ namespace MovementProcessor.Business
                 if (direction == Direction.North)
                 {
                     direction = Direction.East;
+                    return direction;
                 }
                 if (direction == Direction.East)
                 {
                     direction = Direction.South;
+                    return direction;
                 }
                 if (direction == Direction.South)
                 {
                     direction = Direction.West;
+                    return direction;
                 }
                 if (direction == Direction.West)
                 {
                     direction = Direction.North;
+                    return direction;
                 }
             }
-            return direction;
+            throw new Exception();
         }
     }
 }

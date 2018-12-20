@@ -46,7 +46,7 @@ namespace MovementProcessor.Console
                         // we still haven't got anything to map "5 5" to anything
                         // it should be written here
                     }
-                    if ((i + 1) % 2 == 0)// The robot object must be the argument in even order
+                    if ((i+1) % 2 == 0)// every even argument should be robot object// The robot object must be the argument in even order
                     {
                         robot = new Robot();
                         robot.x = argss[0] != null ? Convert.ToInt32(argss[0]) : 0;
@@ -54,9 +54,11 @@ namespace MovementProcessor.Console
                         robot.DirectionOfMovement = DirectionHelper.GetDirection(argss[2] != null ? Convert.ToChar(argss[2]) : 'N');
                     }
                     try
-                    {
-                        if ((i + 2) % 3 == 0)// This will make sure that third argument is mapped as instruction
+                    { // because we have 0 index system 1 is even and 2 is odd
+                        // every odd argument should be instruction
+                        if (i % 2 == 0)// This will make sure that third argument is mapped as instruction
                         {
+                            System.Console.WriteLine(string.Format("processing {0} {1} {2} and {3}", robot.x.ToString(), robot.y.ToString(), robot.DirectionOfMovement.ToString(), args[i].ToString()));
                             program.Run(robot, args[i].ToString());
                         }
                     }
