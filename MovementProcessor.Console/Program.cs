@@ -27,8 +27,7 @@ namespace MovementProcessor.Console
 
                 //Here we can get the rquest and assing it to robot
                 var container = new UnityContainer();
-                container.RegisterType<ProgramStarter, ProgramStarter>();
-
+               
                 ResiterTypes(container);
 
                 var program = container.Resolve<ProgramStarter>();
@@ -46,20 +45,23 @@ namespace MovementProcessor.Console
                         // we still haven't got anything to map "5 5" to anything
                         // it should be written here
                     }
-                    if ((i+1) % 2 == 0)// every even argument should be robot object// The robot object must be the argument in even order
+                    // every even argument should be robot object
+                    // The robot object must be the argument in even order
+                    if ((i+1) % 2 == 0)
                     {
                         robot = new Robot();
-                        robot.x = argss[0] != null ? Convert.ToInt32(argss[0]) : 0;
-                        robot.y = argss[1] != null ? Convert.ToInt32(argss[1]) : 0;
-                        robot.DirectionOfMovement = DirectionHelper.GetDirection(argss[2] != null ? Convert.ToChar(argss[2]) : 'N');
+                        robot.x = argss[0] != null ? Convert.ToInt32(argss[0].Trim()) : 0;
+                        robot.y = argss[1] != null ? Convert.ToInt32(argss[1].Trim()) : 0;
+                        robot.DirectionOfMovement = DirectionHelper.GetDirection(argss[2] != null ? Convert.ToChar(argss[2].Trim()) : 'N');
                     }
                     try
-                    { // because we have 0 index system 1 is even and 2 is odd
+                    {
+                        // because we have 0 index system 1 is even and 2 is odd
                         // every odd argument should be instruction
                         if (i % 2 == 0)// This will make sure that third argument is mapped as instruction
                         {
                             System.Console.WriteLine(string.Format("processing {0} {1} {2} and {3}", robot.x.ToString(), robot.y.ToString(), robot.DirectionOfMovement.ToString(), args[i].ToString()));
-                            program.Run(robot, args[i].ToString());
+                            program.Run(robot, args[i].Trim());
                         }
                     }
                     catch (Exception ex)
@@ -72,6 +74,7 @@ namespace MovementProcessor.Console
 
         public static void ResiterTypes(IUnityContainer container)
         {
+            container.RegisterType<ProgramStarter, ProgramStarter>();
             container.RegisterType<IProcessor, Processor>();
             container.RegisterType<IDirectionChanger, DirectionChanger>();
         }
